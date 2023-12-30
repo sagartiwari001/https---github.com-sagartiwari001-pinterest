@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+  <% if(nav===true){ %>
+    <div class=" fixed w-full px-10 py-3 flex justify-between bg-zinc-800 items-center">
+      <div class="flex w-10 ">
+        <img class="h-8 w-8" src="https://img.icons8.com/?size=48&id=63676&format=png">
+        <h2 class="text-red-800 font-bold mt-1 ml-3">Pinterest</h2>
+     </div>
+  
+      <div class="feed flex gap-10 items-center text-white">
+        <a class="a" href="/profile">Profile</a>
+        <a class="a" href="/add">Create</a>
+        <a class="a" href="/feed">Feed</a>
+        <a class="btn px-3 py-2 bg-red-800 text-white rounded-lg" href="/logout">logout</a>
+
+      </div>
+    </div>
+    <style>
+      .a:hover {
+        color: red;
+        text-transform: capitalize;
+      }
+
+      btn:active {
+        box-shadow: 2px 2px 5px #fc894d;
+      }
+    </style>
+
+    <% } %>
